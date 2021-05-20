@@ -13,5 +13,9 @@ def fib(n):
 def getFibSeq(n):
 
     for x in range(1, n+1):
-        yield fib(x)
+        yield fib(x)                #Using a generator to save memory
+
+
+if __name__ == "__main__":
+    print(list(getFibSeq(5)))
 

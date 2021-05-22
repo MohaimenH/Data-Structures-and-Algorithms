@@ -1,10 +1,8 @@
 def selectionSort(items):
 
     l = list(items)
-    i = 0
-    
-
-    while (i < len(l)):
+   
+    for i in range(len(l) - 1):
 
         minimum = l[i]
 
@@ -17,10 +15,7 @@ def selectionSort(items):
         
 
         l[i], l[pos] = minimum, l[i]
-
-        i += 1
-
-
+        
     return l
 
 if __name__ == '__main__':

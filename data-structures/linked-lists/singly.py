@@ -30,6 +30,12 @@ class SinglyLinkedList():
         self.initialized = False
 
     
+    def get_head_elem(self):
+        return self.head.get_next_node().get_value()
+    
+    def get_tail_elem(self):
+        return self.tail.get_next_node().get_value()
+
     def insert_at_head(self, value):
 
         elem = Node(value, self.head.get_next_node())

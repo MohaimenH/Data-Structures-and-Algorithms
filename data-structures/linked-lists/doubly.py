@@ -101,5 +101,5 @@ if __name__ == "__main__":
 
     print(l.get_head_elem())
     print(l.get_tail_elem())
-    print(l)
+    
     print(l.reverseRepr())
